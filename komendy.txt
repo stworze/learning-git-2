@@ -1,0 +1,3 @@
+autoprefixer:
+autoprefixer-cli style.css -o --style.prefixed.css
+
