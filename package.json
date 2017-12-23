@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/stworze/learning-git-2#readme",
   "dependencies": {
+    "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.21.0"
   }
 }
