@@ -1,25 +1,7 @@
-body {
-  margin: 0, auto;
-  background-color: #f1f1f1;
-}
+body { margin: 0, auto; background-color: red; }
 
-h1, h2 {
-  color: #ccc;
-  padding: 30px;
-  text-align: center;
-}
+h1, h2 { color: #ccc; padding: 30px; text-align: center; }
 
-.container {
-  text-align: center;
-  padding-top: 30px;
-  color: #ccc;
-}
+.container { text-align: center; padding-top: 30px; color: #ccc; }
 
-.test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-/*# sourceMappingURL=style.prefixed.css.map */
+.test { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
