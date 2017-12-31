@@ -1,4 +1,4 @@
 autoprefixer:
 autoprefixer-cli style.css -o --style.prefixed.css
 nu-html-checker:
-nu-html-checker -f html ???
+nu-html-checker -f *html //Tak jest ok?
