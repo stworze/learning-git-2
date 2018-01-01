@@ -11,14 +11,15 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "init:npm-install": "npm install",
-    "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
+    "build:clean": "node_modules/.bin/rimraf css",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:sass:dev": "node-sass --output-style expanded --source-map true -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
-    "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" \"watch:browsersync\" ",
+   "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" \"npm run watch:browsersync\" ",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
     "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-    "watch:browsersync": "glob-run browser-sync start --server --files "css/*.css" "*.html" "
+    "watch:browsersync": "glob-run browser-sync start --server --files *.html"
   },
   "repository": {
     "type": "git",
