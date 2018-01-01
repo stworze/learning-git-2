@@ -37,11 +37,11 @@
     "browser-sync": "^2.21.0",
     "glob-run": "^0.1.6",
     "node-sass": "^4.7.2",
-    "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
     "rimraf": "^2.6.2"
   },
   "devDependencies": {
-    "parallelshell": "^3.0.2"
+    "parallelshell": "^3.0.2",
+    "nu-html-checker": "^0.1.0"
   }
 }
